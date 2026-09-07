@@ -27,68 +27,27 @@ follow [`docs/AGENTS.md`](docs/AGENTS.md) for public prose and
 For other target-specific work, do not preload application guides or the thesis
 corpus; use the unresolved-decision routing below.
 
-## Working loop
-
-1. Read the target's available instructions and architecture first. For a
-   repository, begin with its agent guide.
-2. Inspect the target's actual domain model, manifests, tools, tests,
-   permissions, operating history, and neighboring implementations. Find the
-   local owner or precedent for the concern before retrieving general guidance.
-3. Name the governing decision that local evidence leaves unresolved. Continue
-   without a thesis when no unresolved decision remains. Otherwise, choose one
-   primary route under [Context routing](#context-routing) and read that thesis
-   `README.md`. Add another route only for a distinct unresolved concern. Follow
-   a case or source link only when its evidence can change the decision.
-4. Let target-local truth govern the implementation. The context bundle can
-   sharpen a decision; it cannot override the target's contracts or authority.
-5. Adapt the applicable ideas to the target without copying file layouts,
-   policies, version pins, or fixtures.
-6. Verify the result through the target system's native checks and observable
-   user journeys.
-
 ## Context routing
 
-- Re-evaluating capability, ambition, task-size priors, instruction following,
-  or tool semantics after choosing or upgrading the worker:
-  [`docs/fixed-worker/`](docs/fixed-worker/)
-- Deciding which private, changing operating knowledge the worker needs, how it
-  should retrieve that knowledge, or how internal code and tool use should
-  produce a domain outcome for a user who never sees the code:
-  [`docs/last-mile-deployment/`](docs/last-mile-deployment/)
-- Defining the outcome boundary, ownership of the whole job, use of subagents,
-  or lifecycle closure: [`docs/whole-job/`](docs/whole-job/)
-- Deciding whether missing or overloaded context calls for progressive
-  disclosure, a skill, a runbook, or a goal-specific context-curator sidecar
-  with a trusted publication boundary:
-  [`docs/just-in-time-context/`](docs/just-in-time-context/)
-- Deciding whether the worker lacks a capability or whether an existing tool is
-  hard to discover, invoke, or interpret:
-  [`docs/tool-legibility/`](docs/tool-legibility/)
-- Deciding where local nonfunctional requirements should live as context,
-  examples, types, tests, or policy; where external data becomes canonical
-  repository-owned state; or where repeated interpretation indicates missing
-  semantic ownership: [`docs/domain-modeling/`](docs/domain-modeling/)
-- Defining who may perform a consequential mutation, under which scope,
-  approval, credential, audit, and recovery contract, including alternate
-  mutation paths: [`docs/authority/`](docs/authority/)
-- Defining the evidence boundary for a user or operational claim, including the
-  identity of an artifact across build, test, and release:
-  [`docs/proof/`](docs/proof/)
-- Diagnosing an observed trajectory, recovering a golden principle, or
-  garbage-collecting drift from the governed artifact and its harness:
-  [`docs/feedback/`](docs/feedback/)
-- Choosing for future coherence, dependency ownership, lifetime risk, migration
-  completion, or proportionality:
-  [`docs/durable-systems/`](docs/durable-systems/)
-- Turning a recurring process into a durable loop with owned state,
-  distillation, and gardening:
-  [`docs/continuous-maintenance/`](docs/continuous-maintenance/)
-- Evaluating human attention, outcome effectiveness, utilization, or economics:
-  [`docs/effectiveness/`](docs/effectiveness/)
+Use target-local evidence first. When a consequential decision remains open,
+read one matching thesis README; add a second only for a distinct concern.
+Follow cases or sources only when their evidence can change the decision.
+The target's contracts govern adaptation and verification.
 
-The unresolved decision selects the route. Target-local evidence may resolve it
-without a thesis. When context is needed, start with one thesis and add a second
-only while a separate decision remains open.
+| Unresolved decision | Route |
+| --- | --- |
+| Worker capability, task-size assumptions, instruction or tool semantics | [Fixed worker](docs/fixed-worker/) |
+| Private changing operating knowledge and user-facing domain outcomes | [Last-mile deployment](docs/last-mile-deployment/) |
+| Whole-job ownership, delegation, and lifecycle closure | [Whole job](docs/whole-job/) |
+| Progressive disclosure, skills, runbooks, and context curation | [Just-in-time context](docs/just-in-time-context/) |
+| Capability gaps versus tool discovery, invocation, or interpretation | [Tool legibility](docs/tool-legibility/) |
+| Domain ownership, nonfunctional requirements, and canonical data boundaries | [Domain modeling](docs/domain-modeling/) |
+| Consequential mutation scope, approval, credentials, audit, and recovery | [Authority](docs/authority/) |
+| Claim-matched evidence and artifact identity across build, test, release | [Proof](docs/proof/) |
+| Failed trajectories, recovered principles, and harness drift | [Feedback](docs/feedback/) |
+| Dependencies, coherence, lifetime risk, migration, and proportionality | [Durable systems](docs/durable-systems/) |
+| Recurring loops, owned state, distillation, and gardening | [Continuous maintenance](docs/continuous-maintenance/) |
+| Human attention, outcomes, utilization, and economics | [Effectiveness](docs/effectiveness/) |
 
 For public-post evidence, use
 [`sources/twitter/README.md`](sources/twitter/README.md) as the human index and
