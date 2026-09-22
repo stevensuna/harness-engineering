@@ -29,9 +29,8 @@ boundaries while readable indexes and owning arguments provide thesis routing.
    in agreement with the selected row.
 7. When rights are unclear, store a canonical link, Wayback link, factual
    metadata, bounded quotation, and synthesis—not a full copy.
-8. Update the manifest and the readable source map in the same change, then run
-   `uv run --script sources/scripts/validate_manifest.py` and
-   `uv run --script sources/scripts/test_manifest.py` from the repository root.
+8. Update the manifest and readable source map together. When either changes,
+   run the manifest validator and tests from the repository root.
 
 The canonical OpenAI harness-engineering essay may return an empty response or a
 Cloudflare challenge to non-browser clients. Run
@@ -53,3 +52,6 @@ first, then the verified Internet Archive capture recorded in `sources.json`.
   access field; that declaration does not prove an upstream link is live.
 - Do not expose private repository source, paths, identifiers, or inaccessible
   links.
+
+Complete a source change only after inspecting the diff, validating provenance
+and rights, running the affected scripts, fixing failures, and rerunning them.

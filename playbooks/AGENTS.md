@@ -5,13 +5,13 @@ primary sources or verbatim accounts of Ryan Lopopolo's practice.
 
 ## Using a playbook
 
-- Read the target's instructions and current state first. Its contracts,
+- Read the target's relevant instructions and current state. Its contracts,
   authority, and proof govern the work.
 - Treat the procedure as a scaffold that can be adapted or rejected. Record
   material omissions or changes and the target evidence that required them.
 - Keep observations, interpretation, intervention hypotheses, and verified
   outcomes distinct.
-- Do not treat inspection authority as permission to mutate a target.
+- Inspection access does not grant mutation authority.
 
 ## Editing a playbook
 
@@ -26,3 +26,8 @@ primary sources or verbatim accounts of Ryan Lopopolo's practice.
   [`sources/`](../sources/).
 - Update [`README.md`](README.md) when a playbook's purpose or evidence status
   changes.
+
+When applying a playbook, stop only after the stated outcome is implemented or
+the proposed intervention is explicitly outside authority. Run the native
+checks, inspect the result, fix failures caused by the change, and rerun the
+affected checks.

@@ -13,9 +13,9 @@ its section in another front door.
 
 ## Writing
 
-- Open with the claim. Do not justify why the document exists.
-- Before landing a substantive public-facing synthesis change, obtain separate
-  adversarial reviews for claim integrity and external-reader signal-to-noise.
+- Open with the claim. For a substantive public-facing synthesis change, use
+  separate review for claim integrity and external-reader signal-to-noise when
+  the evidence or audience makes either risk material.
 - Write for an external audience. Remove research status, source counts,
   visibility classifications, attribution deliberation, and editorial dialogue.
 - Prefer concrete nouns and verbs over labels such as “framework,” “pattern,” or
@@ -40,6 +40,11 @@ its section in another front door.
 - Use Mermaid for diagrams. Do not use ASCII art.
 - Do not repeat a thesis at length in a supporting note. Link to its owner and
   develop only what is new.
+
+Finish a document change by checking claims against cited evidence, links and
+fragments, audience-facing prose, and any rendered or repository-native checks
+that apply. Fix findings from those checks and rerun them before reporting
+completion.
 
 ## Claims
 

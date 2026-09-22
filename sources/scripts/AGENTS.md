@@ -1,8 +1,7 @@
 # Python Source Tooling
 
 These scripts parse and validate the source manifest and Twitter corpus and
-retrieve the OpenAI harness-engineering essay. Keep them small, typed, and
-independently runnable with `uv`.
+retrieve the OpenAI essay. Keep them small, typed, and runnable with `uv`.
 
 ## Model the domain before writing the workflow
 
@@ -52,7 +51,8 @@ Keep parser and model tests hermetic. Cover successful construction, missing and
 unknown fields, tagged-variant boundaries, cross-record relationships, overflow
 and path safety, and failures that previously escaped the model.
 
-Run the focused proof loop from the repository root:
+Run the focused checks from the repository root when changing these scripts or
+their models:
 
 ```sh
 uvx ty check sources/scripts
@@ -63,8 +63,12 @@ uv run --script sources/scripts/validate_manifest.py
 ```
 
 Use `uvx ruff format sources/scripts` to apply formatting. Run the locked fetch
-as an integration check when changing retrieval behavior:
+when retrieval behavior changes:
 
 ```sh
 uv run --locked --script sources/scripts/fetch_openai.py
 ```
+
+Finish by inspecting command output, fixing failures caused by the change, and
+rerunning the affected checks. Report unrelated or unavailable checks as
+unverified with their exact error.

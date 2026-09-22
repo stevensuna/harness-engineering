@@ -10,13 +10,16 @@ Neither document is a source text or a playbook published by Ryan.
 | Improve the harness around one bounded, representative job | [Improve One Harnessed Job] |
 | Review several journeys and ownership boundaries across a repository | [Repository Review] |
 | Compare conditions or measure change over time | [Evaluate the Harness] |
+| Qualify a fresh Git worktree and its native toolchain | [Bootstrap a Worktree] |
 
 [Improve One Harnessed Job]: improve-harness.md
 [Repository Review]: repository-review.md
 [Evaluate the Harness]: ../evals/
+[Bootstrap a Worktree]: worktree-bootstrap.md
 
-The first two procedures are editorial syntheses; this repository does not yet
-include an end-to-end application record for either one. Use them under the
-target's own instructions and authority and record what happened. Report a
+The review and intervention procedures are editorial syntheses; this repository
+does not yet include an end-to-end application record for them. Use them under
+the target's own instructions and authority and record what happened. The
+bootstrap procedure is a reusable environment qualification route. Report a
 mistake or omission discovered in use; revise a playbook only in a separately
 authorized task targeting this repository.

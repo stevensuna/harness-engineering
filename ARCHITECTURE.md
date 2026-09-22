@@ -34,6 +34,7 @@ trajectory.
 | `playbooks/README.md`            | Playbook selection, origin, and evidence status                        |
 | `playbooks/improve-harness.md`   | One bounded baseline-to-rerun intervention loop                        |
 | `playbooks/repository-review.md` | Repository-scale assessment and readiness findings                    |
+| `playbooks/worktree-bootstrap.md` | Fresh worktree toolchain qualification                                 |
 | `playbooks/AGENTS.md`            | Instructions for using and editing authored procedures                 |
 | `docs/AGENTS.md`                 | Instructions for writing and reviewing synthesis                      |
 | `assets/`                        | Repository presentation assets                                        |
