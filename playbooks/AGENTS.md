@@ -27,7 +27,8 @@ primary sources or verbatim accounts of Ryan Lopopolo's practice.
 - Update [`README.md`](README.md) when a playbook's purpose or evidence status
   changes.
 
-When applying a playbook, stop only after the stated outcome is implemented or
-the proposed intervention is explicitly outside authority. Run the native
-checks, inspect the result, fix failures caused by the change, and rerun the
-affected checks.
+When applying a playbook, follow the requested mode: analysis stays read-only;
+authorized implementation continues through running the relevant native checks,
+inspecting the result, fixing in-scope failures, and rerunning affected checks.
+Stop at an unmet consequential decision, authority boundary, or external blocker
+and name the remaining work.

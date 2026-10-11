@@ -51,16 +51,17 @@ For attribution, chronology, or related-work questions, consult
 
 ## Environment qualification
 
-Before running a repository job, inspect its toolchain pins, package manifests,
-lockfiles, setup scripts, and available native checks. Prefer the pinned
-runtime and project-local executables. In a fresh Git worktree, install the
-declared dependencies with the lockfile before diagnosing missing commands;
-ignored directories such as `node_modules` are not copied by Git. Verify the
-runtime and one representative native check, then inspect their output.
+For code, dependency, or build changes, resolve the affected toolchain pins,
+manifests, lockfiles, setup entrypoint, and native checks. Reuse established
+setup when its inputs are unchanged. Prefer the pinned runtime and project-local
+executables. In a fresh worktree, ignored dependencies are absent: perform an
+authorized lockfile install before diagnosing missing commands, or report the
+missing setup precisely. Instruction-only edits need the checks that consume
+those instructions, not application setup.
 
-For implementation work, completion means the requested change is implemented,
-the relevant checks have run in the qualified environment, their output has
-been inspected, failures caused by the change have been fixed, and the checks
-have been rerun. If a check remains blocked, record the exact command, error,
-and unverified boundary instead of treating installation or source inspection
-as proof.
+For implementation, complete the requested change, run the affected behavior
+and relevant checks, inspect their output, fix failures caused by the change,
+and rerun affected checks. Continue this loop within granted authority without
+a separate review stop after the first patch. If blocked, record the exact
+command, error, and remaining boundary; source inspection alone is not runtime
+proof.
